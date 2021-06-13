@@ -10,8 +10,14 @@
   "author": "taei",
   "license": "ISC",
   "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "antd": "^4.3.0",
     "next": "^9.5.5",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-import": "^2.23.4"
   }
 }
