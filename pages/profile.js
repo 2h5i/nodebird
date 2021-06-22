@@ -1,21 +1,14 @@
-import Head from "next/head";
-import React from "react";
+import Head from 'next/head';
+import React from 'react';
 
-import AppLayout from "../components/Applayout";
-import FollowList from "../components/FollowList";
-import NicknameEditForm from "../components/NicknameEditForm";
+import AppLayout from '../components/Applayout';
+import FollowList from '../components/FollowList';
+import NicknameEditForm from '../components/NicknameEditForm';
 
 const Profile = () => {
-  const followerList = [
-    { nickname: "태이" },
-    { nickname: "ㅁㅁ" },
-    { nickname: "노드버드" },
-  ];
-  const followingList = [
-    { nickname: "태이" },
-    { nickname: "ㅁㅁ" },
-    { nickname: "노드버드" },
-  ];
+  const followerList = [{ nickname: '태이' }, { nickname: 'ㅁㅁ' }, { nickname: '노드버드' }];
+  const followingList = [{ nickname: '태이' }, { nickname: 'ㅁㅁ' }, { nickname: '노드버드' }];
+
   return (
     <>
       <Head>
