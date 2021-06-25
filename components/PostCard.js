@@ -6,6 +6,7 @@ import { PropTypes } from 'prop-types';
 import { EllipsisOutlined, HeartOutlined, MessageOutlined, RetweetOutlined, HeartTwoTone } from '@ant-design/icons';
 import PostImages from './PostImages';
 import CommentForm from './CommentForm';
+import PostCardContent from './PostCardContent';
 
 const PostCard = ({ post }) => {
   const { me } = useSelector((state) => state.user);
@@ -54,7 +55,7 @@ const PostCard = ({ post }) => {
       >
         <Card.Meta
           title={post.User.nickname}
-          description={post.content}
+          description={<PostCardContent postData={post.content} />}
           avatar={<Avatar>{post.User.nickname[0]}</Avatar>}
         />
         {/* <Image />
